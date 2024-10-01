@@ -4,7 +4,7 @@
     <script type="text/javascript">
         function init() {
             var id = document.location.href.substring(
-                document.location.href.lastIndexOf('/'));
+                document.location.href.IndexOf('?') + 1);
             var a = document.createElement('a');
             a.href = 'mvtr://mvtr.minia.ru/#/movie/' + id;
             a.style.display = 'none';
@@ -16,6 +16,5 @@
     </script>
 </head>
 <body>
-    <p>If you are not redirected, <a href="mvtr://mvtr.minia.ru/#/movie/889737">click here</a>.</p>
 </body>
 </html>
